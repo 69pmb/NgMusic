@@ -1,8 +1,8 @@
-import { DropboxService } from './dropbox.service';
+import { DropboxService } from './services/dropbox.service';
 import { Component, OnInit } from '@angular/core';
 
 import * as xml2js from 'xml2js';
-import { Composition, Fichier } from './model';
+import { Composition, Fichier } from './utils/model';
 
 @Component({
   selector: 'app-root',

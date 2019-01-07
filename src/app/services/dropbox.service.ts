@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import * as Dropbox from 'dropbox';
 
 import { UtilsService } from './utils.service';
-import { Dropbox as DropboxConstante } from './dropbox';
+import { Dropbox as DropboxConstante } from '../utils/dropbox';
 
 @Injectable({ providedIn: 'root' })
 export class DropboxService {
