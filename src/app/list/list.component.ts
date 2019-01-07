@@ -1,7 +1,7 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { PageEvent } from '@angular/material/paginator';
 import { Sort } from '@angular/material/sort';
-import { faClock, faTimesCircle } from '@fortawesome/free-regular-svg-icons';
+import { faTimesCircle } from '@fortawesome/free-regular-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
 import { Composition } from '../utils/model';
@@ -43,15 +43,11 @@ export class ListComponent implements OnInit {
   }
 
   refreshData(): Composition[] {
-    console.log('artistFilter', this.artistFilter);
-    console.log('titleFilter', this.titleFilter);
     let list = this.compoList;
     if (this.artistFilter) {
-      console.log('filter a');
       list = Utils.filterByFields(list, ['artist'], this.artistFilter);
     }
     if (this.titleFilter) {
-      console.log('filter t');
       list = Utils.filterByFields(list, ['title'], this.titleFilter);
     }
     list = Utils.sortComposition(list, this.sort);
