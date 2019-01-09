@@ -16,7 +16,7 @@ $newName = "NgMusic_" + (Get-Date -Format FileDateTime) + ".apk"
 Rename-Item -Path ($apkDir + "\app-debug.apk") -NewName $newName
 Copy-Item ($apkDir + "\" + $newName) -Destination $outputDir -force
 
-if((Get-Item ($outputDir + "\" + $newName)).length -lt 1700KB) {
+if((Get-Item ($outputDir + "\" + $newName)).length -lt 300KB) {
 	Write-Host "AN ERROR OCCURRED" -ForegroundColor Red
 } else {
 	Write-Host "APK SUCCESSFULLY GENERATED" -ForegroundColor Green
