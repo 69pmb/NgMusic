@@ -106,7 +106,7 @@ export class ListComponent implements OnInit {
   }
 
   onTop(): void {
-    // this.elemRef.nativeElement.querySelector('.filters').scrollIntoView();
+    this.elemRef.nativeElement.querySelector('.filters').scrollIntoView();
   }
 
 }

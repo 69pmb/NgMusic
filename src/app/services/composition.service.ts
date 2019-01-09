@@ -1,4 +1,3 @@
-import { Sort } from '@angular/material/sort';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import * as xml2js from 'xml2js';
@@ -65,11 +64,11 @@ export class CompositionService {
     return this.table.toArray();
   }
 
-  add(data: Composition) {
+  add(data: Composition): Promise<number> {
     return this.table.add(data);
   }
 
-  addAll(data: Composition[]) {
+  addAll(data: Composition[]): void {
     this.table.bulkAdd(data).then((lastKey) => {
       console.log(`Done adding ${data.length} compositions`);
       console.log('Last composition id was: ' + lastKey);
@@ -80,11 +79,11 @@ export class CompositionService {
     });
   }
 
-  update(id, data) {
+  update(id: number, data: Composition): Promise<number> {
     return this.table.update(id, data);
   }
 
-  remove(id) {
+  remove(id: number): Promise<void> {
     return this.table.delete(id);
   }
 
@@ -104,6 +103,4 @@ export class CompositionService {
     });
     return fileList;
   }
-
-
 }

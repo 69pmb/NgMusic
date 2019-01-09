@@ -1,5 +1,7 @@
 @import "../../styles";
 
+/* stylelint-disable selector-pseudo-element-no-unknown */
+
 .paginator {
   top: 0;
 }
@@ -40,11 +42,8 @@ mat-row {
   min-height: 0 !important;
 }
 
-.example-detail-row {
-
-  & td.mat-cell {
-    border-bottom-style: unset !important;
-  }
+.example-detail-row td.mat-cell {
+  border-bottom-style: unset !important;
 }
 
 .example-element-detail {
@@ -53,11 +52,11 @@ mat-row {
 
 .example-element-diagram {
   min-width: 80px;
-  border: 2px solid black;
+  height: 104px;
+  margin: 8px 0;
   padding: 8px;
   font-weight: lighter;
-  margin: 8px 0;
-  height: 104px;
+  border: 2px solid black;
 }
 
 .example-element-row {
