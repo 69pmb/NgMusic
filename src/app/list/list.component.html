@@ -2,7 +2,7 @@
   <!-- Artist Filter -->
   <mat-form-field>
     <input matInput type="search" placeholder="Rechercher un artiste" [(ngModel)]="artistFilter" (keyup)="paginator.firstPage(); onSearch();" />
-    <span *ngIf="artistfilter" (click)="artistfilter=''; onSearch();" class="pointer">
+    <span *ngIf="artistFilter" (click)="artistFilter=''; onSearch();" class="pointer">
       <fa-icon [icon]="['far', 'times-circle']"></fa-icon>
     </span>
   </mat-form-field>
