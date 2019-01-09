@@ -36,6 +36,34 @@
   }
 }
 
+mat-row {
+  min-height: 0 !important;
+}
+
+.example-detail-row {
+
+  & td.mat-cell {
+    border-bottom-style: unset !important;
+  }
+}
+
+.example-element-detail {
+  overflow: hidden;
+}
+
+.example-element-diagram {
+  min-width: 80px;
+  border: 2px solid black;
+  padding: 8px;
+  font-weight: lighter;
+  margin: 8px 0;
+  height: 104px;
+}
+
+.example-element-row {
+  border-bottom-width: 0;
+}
+
 @include media('800px') {
   .filters {
     flex-direction: column;
