@@ -6,6 +6,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { skipWhile } from 'rxjs/operators';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { BehaviorSubject } from 'rxjs';
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
 import { Composition, Dropdown } from '../utils/model';
 import { Utils } from '../utils/utils';
@@ -49,6 +50,7 @@ export class ListComponent implements OnInit {
   deleted = false;
   beginFilter: number;
   endFilter: number;
+  faAngleUp = faAngleUp;
 
   constructor(
     private elemRef: ElementRef,
@@ -141,6 +143,10 @@ export class ListComponent implements OnInit {
 
   onPaginateChange(): void {
     this.paginate(this.filter(this.compoList));
+  }
+
+  goTop(): void {
+    this.elemRef.nativeElement.querySelector('.filters').scrollIntoView();
   }
 
 }
