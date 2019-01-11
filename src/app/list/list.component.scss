@@ -70,11 +70,11 @@ mat-row {
 }
 
 #goTop {
-  margin: auto;
   display: flex;
+  margin: auto;
 
   & ::ng-deep.fa-angle-up {
-    color: $blue
+    color: $blue;
   }
 }
 
