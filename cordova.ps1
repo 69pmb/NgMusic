@@ -12,9 +12,9 @@ xcopy /s dist cordova\NgMusic\www
 cd cordova\NgMusic
 cordova build android
 
-$newName = "NgMusic_" + (Get-Date -Format FileDateTime) + ".apk"
+$newName = "NgMusic_" + (Get-Date -UFormat '%Y.%m.%dT%H.%M.%S') + ".apk"
 Rename-Item -Path ($apkDir + "\app-debug.apk") -NewName $newName
-Copy-Item ($apkDir + "\" + $newName) -Destination $outputDir -force
+Move-Item ($apkDir + "\" + $newName) -Destination $outputDir -force
 
 if((Get-Item ($outputDir + "\" + $newName)).length -lt 300KB) {
 	Write-Host "AN ERROR OCCURRED" -ForegroundColor Red
