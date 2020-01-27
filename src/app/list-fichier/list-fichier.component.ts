@@ -97,10 +97,12 @@ export class ListFichierComponent extends ListComponent<Fichier> implements OnIn
       result.forEach(f => {
         if (f.sorted) {
           f.displayedCompoList = f.displayedCompoList.filter(c => c.rank < 10);
+        } else {
+          f.displayedCompoList = [];
         }
       });
     }
-    return result;
+    return result.filter(f => f.displayedCompoList && f.displayedCompoList.length > 0);
   }
 
   sortList(list: Fichier[]): Fichier[] {
