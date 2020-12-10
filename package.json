@@ -34,7 +34,7 @@
     "core-js": "2.6.2",
     "dexie": "2.0.4",
     "dropbox": "4.0.15",
-    "events": "3.0.0",
+    "events": "3.2.0",
     "file-system": "2.2.2",
     "jszip": "3.2.2",
     "moment-mini-ts": "2.20.1",
