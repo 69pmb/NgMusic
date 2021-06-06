@@ -2369,14 +2369,6 @@ buffer@^4.3.0:
     ieee754 "^1.1.4"
     isarray "^1.0.0"
 
-buffer@^5.0.8:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/buffer/-/buffer-5.2.1.tgz#dd57fa0f109ac59c602479044dca7b8b3d0b71d6"
-  integrity sha512-c+Ko0loDaFfuPWiL02ls9Xd3GO3cPVmUobQ6t3rXNUk304u6hGq+8N/kFi+QEIKhzK3uwolVhLzszmfLmMLnqg==
-  dependencies:
-    base64-js "^1.0.2"
-    ieee754 "^1.1.4"
-
 builtin-modules@^1.0.0, builtin-modules@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-1.1.1.tgz#270f076c5a72c02f5b65a47df94c5fe3a278892f"
@@ -3692,13 +3684,12 @@ dot-prop@^5.2.0:
   dependencies:
     is-obj "^2.0.0"
 
-dropbox@4.0.30:
-  version "4.0.30"
-  resolved "https://registry.yarnpkg.com/dropbox/-/dropbox-4.0.30.tgz#747247b5088e26ab143db39afed8c66f0887d670"
-  integrity sha512-qmSeT8rhjARDHj3vxOTKQjc6IQ46AlRwJS8dqE26R323fikkjC4EXzocV12PsO7DOrjaqbOH3FjEdEEnrFraJw==
+dropbox@9.8.6:
+  version "9.8.6"
+  resolved "https://registry.yarnpkg.com/dropbox/-/dropbox-9.8.6.tgz#a25887519d053a78285a2a7f88121b1af1c9bfd9"
+  integrity sha512-pRfPFvoeRCF/koVRzdtpXqzOh6hfptjQGBspYyZ1fyhnr2Zj1ZTZGhUdhL38c3NI7EfYBzXakanuNAMnJERcWg==
   dependencies:
-    buffer "^5.0.8"
-    moment "^2.19.3"
+    node-fetch "^2.6.1"
 
 duplexify@^3.4.2, duplexify@^3.6.0:
   version "3.7.1"
@@ -6569,11 +6560,6 @@ moment-mini-ts@2.20.1:
   resolved "https://registry.yarnpkg.com/moment-mini-ts/-/moment-mini-ts-2.20.1.tgz#8b54a823848e91f11c56e36e253edf80c8974719"
   integrity sha512-X8CHo8rq0ZgyGFvqc117uc8JJzAQPBzFj9ExEP/ei7Lcvv7iyEQp5m1JTv7l1EtleQbbKfwXmy2FQNBcmorLzA==
 
-moment@^2.19.3:
-  version "2.23.0"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.23.0.tgz#759ea491ac97d54bac5ad776996e2a58cc1bc225"
-  integrity sha512-3IE39bHVqFbWWaPOMHZF98Q9c3LDKGTmypMiTM2QygGXXElkFWIH7GxfmlwmY2vwa+wmNsoYZmG2iusf1ZjJoA==
-
 move-concurrently@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/move-concurrently/-/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"
@@ -6693,6 +6679,11 @@ node-fetch-npm@^2.0.2:
     encoding "^0.1.11"
     json-parse-better-errors "^1.0.0"
     safe-buffer "^5.1.1"
+
+node-fetch@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
+  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
 node-forge@0.9.0:
   version "0.9.0"
