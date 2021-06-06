@@ -31,7 +31,7 @@
     "@fortawesome/free-regular-svg-icons": "5.15.1",
     "@fortawesome/free-solid-svg-icons": "5.15.1",
     "buffer": "6.0.3",
-    "core-js": "3.8.1",
+    "core-js": "3.14.0",
     "dexie": "2.0.4",
     "dropbox": "4.0.30",
     "events": "3.2.0",
